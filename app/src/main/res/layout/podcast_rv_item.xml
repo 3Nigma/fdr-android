@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="72dp"
+              android:elevation="2dp"
+              android:background="@drawable/podcast_item_rect"
+    >
+
+    <FrameLayout
+        android:layout_width="72dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvi_podcast_play"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_play_36dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Podcast Title"
+            android:id="@+id/rvi_podcast_title"
+            android:textSize="16sp"
+            android:typeface="sans"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:paddingRight="16dp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:lines="2"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="13/07/2015"
+            android:id="@+id/rvi_podcast_date"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvi_podcast_youtube"
+                android:src="@mipmap/ic_youtube_enabled"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:layout_gravity="left"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvi_podcast_vimeo"
+                android:src="@mipmap/ic_vimeo_enabled"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
